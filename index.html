@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- SEO Meta Tags: помогают Google понять содержание страницы -->
+    <meta name="description"
+        content="פיטנס קלאב - מועדון כושר מודרני עם מתקנים מתקדמים, מאמנים אישיים ואימונים מותאמים אישית. הצטרפו אלינו עוד היום!">
+    <meta name="keywords"
+        content="פיטנס קלאב, חדר כושר, אימונים אישיים, מאמן כושר, כושר גופני, מועדון כושר, חוגים, בריאות">
+
+    <meta name="author" content="ולנטין אולייניק עבור מועדון כושר פיטנס קלאב">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ffitness-club-il.netlify.app" />
+
+    <!-- Open Graph Meta Tags: улучшают превью при публикации в соцсетях -->
+    <meta property="og:title" content="פיטנס קלאב | מועדון כושר במגדל העמק" />
+    <meta property="og:description"
+        content="הצטרפו לפיטנס קלאב - מועדון כושר מקצועי עם ציוד מתקדם, חוגים מגוונים ואימונים אישיים. מיקום נוח במגדל העמק!" />
+    <meta property="og:image" content="https://fitness-club-il.netlify.app/fitness-club-mini.jpg" />
+    <meta property="og:url" content="https://fitness-club-il.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Иконки для Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+
+    <!-- Иконка для iOS -->
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon-48x48.png" type="image/png">
+
+    <!-- JSON-LD Structured Data: помогает Google понять тип бизнеса -->
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "HealthClub",
+              "name": "פיטנס קלאב",
+              "image": "https://fitness-club-il.netlify.app/fitness-club-mini.jpg",
+              "url": "https://fitness-club-il.netlify.app/",
+              "telephone": "+97246475007",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Haitstadyon St",
+                "addressLocality": "מגדל העמק",
+                "addressCountry": "IL"
+              },
+              "openingHours": "Su-Th 08:00-22:30, Fr 08:00-15:00, Sa 19:00-22:30",
+              "areaServed": "מגדל העמק והסביבה"
+            }
+            </script>
+
+
+    <title>Fitness Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <meta name="google-site-verification" content="XHLo45sX7jTGEBt8SA4niS2-kZEv7-jH975vSM9_Cro" />
+
+</head>
+
+<body>
+    <!-- Оберни весь сайт в #site-wrapper -->
+    <div id="site-wrapper">
+        <!-- Весь остальной контент сайта должен быть здесь -->
+        <!-- Семантический тег для «шапки» сайта -->
+        <header class="header" id="header">
+
+            <div class="header-content">
+
+                <nav class="navbar" data-aos="slide-right">
+                    <button class="hamburger-menu-toggle" id="hamburger-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul id="navbar-links">
+                        <li><a href="#gallery">גלריה</a></li>
+                        <li><a href="#hours">שעות פתיחה</a></li>
+                        <li><a href="#training">אימונים</a></li>
+                        <li><a href="#pricing">מחירים</a></li>
+                        <li><a href="#location">איך מגיעים</a></li>
+                    </ul>
+
+                </nav>
+                <img src="fitness-club.jpg" alt="תמונת מועדון כושר">
+                <a href="tel:+97246475007" class="call-button">התקשר עכשיו <img
+                        src="https://cdn-icons-png.flaticon.com/512/5585/5585856.png" alt="Phone" width="24"
+                        height="24"></a>
+            </div>
+
+        </header>
+
+
+        <div class="main">
+            <section class="welcome-section" class="main-content" data-aos="flip-up">
+                <h1>ברוכים הבאים למועדון הכושר<br>פיטנס קלאב</h1>
+                <img class="main-banner-img" src="fitness-club-cuted.png" alt="סמל מועדון כושר">
+                <div class="contact-buttons-top">
+                    <a href="https://www.facebook.com/fitnessclub.moyal" target="_blank" aria-label="Facebook">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="32"
+                            height="32">
+                    </a>
+                    <a href="mailto:fitnessclub.moyal@gmail.com" aria-label="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="32"
+                            height="32">
+                    </a>
+                    <a href="tel:+97246475007" aria-label="Phone">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5585/5585856.png" alt="Phone" width="32"
+                            height="32">
+                    </a>
+                </div>
+            </section>
+
+
+
+            <section id="gallery" class="gallery-section" aria-label="גלריה של חדר כושר" data-aos="slide-right">
+                <h2>גלריה</h2><!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="חדר-כושר1.jpg" alt="מכשיר חדר כושר"></div>
+                        <div class="swiper-slide"><img src="חדר-כושר2.jpg" alt="מכשירי חדר כושר"></div>
+                        <div class="swiper-slide"><img src="חדר-כושר3.jpg" alt="הליכונים"></div>
+                        <div class="swiper-slide"><img src="חדר-כושר4.jpg" alt="הליכונים"></div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+            </section>
+
+
+            <div id="hours" class="welcome-content" data-aos="slide-right">
+                <div class="working-hours">
+                    <h2>שעות פעילות</h2>
+                    <p>ראשון - חמישי: 8:00 - 22:30</p>
+                    <p>שישי: 8:00 - 15:00</p>
+                    <p>שבת: 19:00 - 22:30</p>
+                </div>
+                <span class="divider"></span>
+
+                <div class="welcome-info">
+                    <h2>חדש במועדון?</h2>
+                    <p class="desc"> התקשרו והצטרפו עכשיו ותהנו ממגוון מתקנים ושירותים מתקדמים.</p>
+                    <a href="tel:+97246475007" class="call-btn"> הצטרף עכשיו <img
+                            src="https://cdn-icons-png.flaticon.com/512/5585/5585856.png" alt="Phone" width="24"
+                            height="24"></a>
+                </div>
+
+            </div>
+            <section id="training" class="fitness-training">
+                <h2 data-aos="slide-left">אימון כושר אישי</h2>
+                <p>אימון כושר אישי הוא הדרך הטובה ביותר להשיג את מטרות הכושר שלך
+                </p>
+                <div class="gym-photo" data-aos="slide-left">
+                    <img class="gym-img" src="fitness-personal-training.webp" alt="אימון כושר אישי">
+                </div>
+
+                <div class="fitness-gallery" data-aos="slide-right">
+                    <h2>החוגים שלנו</h2>
+                    <div class="fitness-img-description">
+                        <figure class="fitness-img-item">
+                            <h3>ספינינג</h3>
+                            <img src="indoor-cycling.png" alt="ספינינג">
+
+                        </figure>
+                        <figure class="fitness-img-item">
+                            <h3>פילאטיס</h3>
+                            <img src="yoga-fitness-personal-training.webp" alt="פילטס">
+
+                        </figure>
+                        <figure class="fitness-img-item">
+                            <h3>פיטנס</h3>
+                            <img src="group-fitness-workout.webp" alt="פיטנס">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section id="pricing" class="price-list">
+                <div class="price-item1" data-aos="slide-left">
+                    <h2>חבילת פרימיום</h2>
+                    <p>
+                        אם אתם מחפשים את הדרך המושלמת לשפר את הבריאות, לחטב את הגוף ולשמור על שגרת חיים בריאה – חבילת
+                        הפרימיום שלנו בדיוק
+                        בשבילכם! <br><br>
+                        החבילה כוללת <strong>גישה חופשית וללא הגבלה לחדר הכושר</strong>, בו תוכלו להתאמן עם ציוד מקצועי,
+                        חדשני ומתקדם,
+                        באווירה נעימה ותומכת. <br><br>
+                        בנוסף לכך, החבילה כוללת <strong>השתתפות חופשית בכל החוגים</strong> – ללא צורך בתשלום
+                        נוסף!<br><br>
+                        בין החוגים שתוכלו ליהנות מהם: ספינינג, פילאטיס, זומבה, יוגה, אימוני כוח, קיקבוקס ועוד. <br><br>
+                        💛 הכל כלול – בלי אותיות קטנות <br>
+                        🕒 כניסה חופשית בשעות הפעילות <br>
+                        💬 צוות מקצועי זמין להכוונה <br>
+                        <br><br>
+                        <strong>רק ב־199₪ לחודש</strong> – כושר, בריאות והנאה במקום אחד!
+                    </p>
+                    <a href="tel:+97246475007" class="call-btn"> הצטרף עכשיו <img
+                            src="https://cdn-icons-png.flaticon.com/512/5585/5585856.png" alt="Phone" width="24"
+                            height="24"></a>
+                </div>
+                <div class="price-item2" data-aos="slide-right">
+                    <h2>חבילת בסיס</h2>
+                    <p>
+                        מחפשים להתחיל להתאמן בצורה חכמה, אפקטיבית ומשתלמת? <strong>חבילת הבסיס שלנו</strong> היא הפתרון
+                        המושלם
+                        עבורכם!<br><br>
+                        החבילה כוללת <strong>גישה חופשית לחדר הכושר</strong> בכל ימות השבוע, בשעות נוחות ובאווירה
+                        מקצועית
+                        ונעימה.
+                        בין אם אתם מתאמנים מתחילים או מתקדמים – אצלנו תמצאו את כל הציוד והמתקנים הדרושים להצלחה.<br><br>
+                        בנוסף, כל מנוי מקבל <strong>תכנית אימונים אישית</strong> המותאמת למטרותיו האישיות: חיטוב, ירידה
+                        במשקל, חיזוק שרירים
+                        או שמירה על אורח חיים בריא.<br><br>
+                        ✅ ציוד כושר מתקדם<br>
+                        ✅ ליווי מקצועי אישי<br>
+                        ✅ תכנית מותאמת לפי רמת הכושר והיעדים<br>
+                        ✅ כניסה חופשית בשעות הפעילות<br><br>
+                        <strong>רק ב־179₪ לחודש</strong> – פתרון אידיאלי למי שרוצה להתאמן ברצינות, בלי לשלם על מה שלא
+                        צריך.
+                    </p>
+                    <a href="tel:+97246475007" class="call-btn"> הצטרף עכשיו <img
+                            src="https://cdn-icons-png.flaticon.com/512/5585/5585856.png" alt="Phone" width="24"
+                            height="24"></a>
+                </div>
+            </section>
+            <section class="contact-section" data-aos="slide-left">
+                <h2>צרו קשר</h2>
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="אימייל" required>
+                    <input type="tel" name="phone" placeholder="טלפון" required>
+                    <textarea name="message" rows="5" placeholder="הודעה" required></textarea>
+                    <button type="submit">שלח</button>
+                </form>
+            </section>
+            <section id="location" class="map-section" data-aos="slide-right">
+                <h2>המיקום שלנו</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.590757381659!2d35.237539!3d32.6703329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c529777576f05%3A0x5904fc35a025128a!2z16TXmdeY16DXoSDXp9ec15DXkSDXnteS15PXnCDXlNei157Xpw!5e0!3m2!1sru!2sil!4v1750783810637!5m2!1sru!2sil"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>📍 Haitstadyon St, Migdal HaEmek</p>
+                </div>
+            </section>
+
+
+
+
+
+        </div>
+        <div class="footer">
+            <div class="contact-buttons-bottom">
+                <a href="https://www.facebook.com/fitnessclub.moyal" target="_blank" aria-label="Facebook">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="32"
+                        height="32">
+                </a>
+                <a href="mailto:fitnessclub.moyal@gmail.com" aria-label="Email">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="32" height="32">
+                </a>
+                <a href="tel:+97246475007" aria-label="Phone">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5585/5585856.png" alt="Phone" width="32"
+                        height="32">
+                </a>
+            </div>
+            <footer class="footer-content">
+                <p>כל הזכויות שמורות © 2025</p>
+                <a href="sitemap.html">מפת אתר</a> |
+                <a href="terms.html">תנאי שימוש</a> |
+                <a href="privacy.html">מדיניות פרטיות</a> |
+                <a href="accessibility.html">הצהרת נגישות</a>
+            </footer>
+
+
+        </div>
+
+        <!-- Подключаем JS AOS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+        <!-- Подключаем Swiper  -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+        <!-- Инициализируем AOS -->
+        <script>
+            AOS.init({
+                delay: 100,
+                duration: 1500,  // длительность анимации (в миллисекундах)
+                once: true      // анимация повторяется при каждом появлении
+            });
+        </script>
+
+        <!-- Accessibility Widget HTML (WCAG 2.0 AA Enhanced + Extended + Keyboard Nav + Screen Reader Support) -->
+
+        <div id="accessibility-widget" class="accessibility-widget">
+            <button id="accessibility-toggle" aria-label="פתח תפריט נגישות" aria-expanded="false"
+                aria-controls="accessibility-menu">♿</button>
+            <div id="accessibility-menu" class="accessibility-menu" role="region" aria-label="תפריט נגישות">
+                <button onclick="increaseFontSize()" tabindex="0"> הגדל טקסט</button>
+                <button onclick="decreaseFontSize()" tabindex="0"> הקטן טקסט</button>
+                <button onclick="toggleContrast()" tabindex="0"> ניגודיות גבוהה</button>
+                <button onclick="highlightLinks()" tabindex="0"> הדגש קישורים</button>
+                <button onclick="toggleAnimations()" tabindex="0"> בטל אנימציות</button>
+                <button onclick="underlineLinks()" tabindex="0"> קו תחתון לקישורים</button>
+                <button onclick="underlineHeadings()" tabindex="0"> קו תחתון לכותרות</button>
+                <button onclick="resetAccessibility()" tabindex="0"> איפוס</button>
+            </div>
+        </div>
+
+        <style>
+            .accessibility-widget {
+                position: fixed !important;
+                top: 80px;
+                left: 5px;
+                z-index: 999;
+                direction: rtl;
+            }
+
+            .accessibility-widget button {
+                display: block;
+                padding: 5px;
+                color: #fff;
+                border: 1px solid #ccc;
+                cursor: pointer;
+                background-color: #000000;
+                font-size: 1.5em;
+                opacity: 0.4;
+                transition: opacity 0.3s ease;
+            }
+
+            .accessibility-widget button:hover,
+            .accessibility-widget button:focus,
+            #accessibility-toggle[aria-expanded="true"] {
+                opacity: 1;
+                color: #000303;
+                background-color: #fed700;
+            }
+
+            #accessibility-menu {
+                display: none;
+                background: #000;
+                border: 1px solid #ccc;
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+                position: absolute;
+                top: 50px;
+                left: 0;
+                opacity: 0;
+                transform: translateY(0);
+                transition: opacity 0.3s ease;
+                font-size: 0.8em;
+            }
+
+            #accessibility-menu.show {
+                display: block;
+                opacity: 1;
+            }
+
+            #accessibility-menu button {
+                display: block;
+                white-space: nowrap;
+                width: 100%;
+                margin-top: 5px;
+                font-size: 1em;
+                background-color: #222;
+                color: #fff;
+                border: 1px solid #555;
+            }
+
+            #accessibility-menu:focus-within {
+                outline: 2px solid #fed700;
+            }
+        </style>
+
+        <script>
+            const widgetToggle = document.getElementById('accessibility-toggle');
+            const menu = document.getElementById('accessibility-menu');
+            let fontSize = 100;
+            let highContrast = false;
+            let linksHighlighted = false;
+            let animationsOff = false;
+            let linksUnderlined = false;
+            let headingsUnderlined = false;
+
+            widgetToggle.addEventListener('click', toggleMenu);
+
+            function toggleMenu() {
+                const expanded = widgetToggle.getAttribute('aria-expanded') === 'true';
+                widgetToggle.setAttribute('aria-expanded', !expanded);
+                if (!expanded) {
+                    menu.classList.add('show');
+                    menu.querySelector('button').focus();
+                } else {
+                    menu.classList.remove('show');
+                }
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && menu.classList.contains('show')) {
+                    widgetToggle.setAttribute('aria-expanded', 'false');
+                    menu.classList.remove('show');
+                    widgetToggle.focus();
+                }
+
+                const focusableButtons = [...menu.querySelectorAll('button')];
+                const currentIndex = focusableButtons.indexOf(document.activeElement);
+
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    const next = (currentIndex + 1) % focusableButtons.length;
+                    focusableButtons[next].focus();
+                }
+
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    const prev = (currentIndex - 1 + focusableButtons.length) % focusableButtons.length;
+                    focusableButtons[prev].focus();
+                }
+            });
+
+            function increaseFontSize() {
+                fontSize += 10;
+                document.body.style.fontSize = fontSize + '%';
+            }
+
+            function decreaseFontSize() {
+                fontSize -= 10;
+                document.body.style.fontSize = fontSize + '%';
+            }
+
+            function toggleContrast() {
+                highContrast = !highContrast;
+                const wrapper = document.getElementById('site-wrapper');
+                if (wrapper) {
+                    wrapper.style.filter = highContrast ? 'invert(100%) hue-rotate(180deg)' : '';
+                }
+            }
+
+            function highlightLinks() {
+                linksHighlighted = !linksHighlighted;
+                document.querySelectorAll('a').forEach(link => {
+                    link.style.outline = linksHighlighted ? '2px solid #f00' : '';
+                    link.style.backgroundColor = linksHighlighted ? '#ff0' : '';
+                });
+            }
+
+            function toggleAnimations() {
+                animationsOff = !animationsOff;
+                const style = document.createElement('style');
+                style.id = 'disable-animations';
+                style.innerHTML = '* { animation: none !important; transition: none !important; }';
+                if (animationsOff) {
+                    document.head.appendChild(style);
+                } else {
+                    const existing = document.getElementById('disable-animations');
+                    if (existing) existing.remove();
+                }
+            }
+
+            function underlineLinks() {
+                linksUnderlined = !linksUnderlined;
+                document.querySelectorAll('a').forEach(link => {
+                    link.style.textDecoration = linksUnderlined ? 'underline' : '';
+                });
+            }
+
+            function underlineHeadings() {
+                headingsUnderlined = !headingsUnderlined;
+                document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(h => {
+                    h.style.textDecoration = headingsUnderlined ? 'underline' : '';
+                });
+            }
+
+            function resetAccessibility() {
+                fontSize = 100;
+                document.body.style.fontSize = '';
+
+                const wrapper = document.getElementById('site-wrapper');
+                if (wrapper) wrapper.style.filter = '';
+
+                document.querySelectorAll('a').forEach(link => {
+                    link.style.outline = '';
+                    link.style.backgroundColor = '';
+                    link.style.textDecoration = '';
+                });
+
+                document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(h => {
+                    h.style.textDecoration = '';
+                });
+
+                const existing = document.getElementById('disable-animations');
+                if (existing) existing.remove();
+
+                highContrast = false;
+                linksHighlighted = false;
+                animationsOff = false;
+                linksUnderlined = false;
+                headingsUnderlined = false;
+            }
+        </script>
+
+
+
+</body>
+
+</html>
