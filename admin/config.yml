@@ -2,6 +2,7 @@ backend:
     name: github
     repo: Neiron666/fitness-club-site
     branch: main
+    auth_scope: repo
     base_url: https://fitness-club-il-project.netlify.app
     auth_endpoint: /api/auth
 
