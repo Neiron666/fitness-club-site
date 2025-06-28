@@ -9,6 +9,14 @@
 <body>
     <!-- Подключение Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+    <!-- Указываем путь к config.yml -->
+    <script>
+        window.CMS_MANUAL_INIT = true;
+        window.CMS_INIT = function (CMS) {
+            CMS.init({ config: '/admin/config.yml' });
+        };
+    </script>
 </body>
 
 </html>
