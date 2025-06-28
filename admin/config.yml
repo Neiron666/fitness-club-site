@@ -1,6 +1,5 @@
 backend:
-    name: github
-    repo: Neiron666/fitness-club-site
+    name: git-gateway
     branch: main
 
 media_folder: "images/uploads" # Куда сохраняются картинки внутри репозитория
