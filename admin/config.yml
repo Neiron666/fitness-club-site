@@ -2,15 +2,44 @@ backend:
     name: git-gateway
     branch: main
 
-media_folder: "images/uploads" # куда сохраняются изображения
-public_folder: "/images/uploads"
+media_folder: "images/uploads" # Куда сохраняются картинки внутри репозитория
+public_folder: "/images/uploads" # Как путь выглядит на сайте
 
 collections:
+    - name: "gallery"
+      label: "גלריה"
+      folder: "images/gallery"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "כותרת", name: "title", widget: "string" }
+          - { label: "תמונה", name: "image", widget: "image" }
+
+    - name: "prices"
+      label: "מחירים"
+      folder: "content/prices"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "כותרת", name: "title", widget: "string" }
+          - { label: "תיאור", name: "description", widget: "text" }
+          - { label: "מחיר", name: "price", widget: "string" }
+
+    - name: "hours"
+      label: "שעות פתיחה"
+      folder: "content/hours"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "יום", name: "day", widget: "string" }
+          - { label: "שעות", name: "hours", widget: "string" }
+
     - name: "news"
-      label: "חדשות"
+      label: "חדשות / עדכונים"
       folder: "content/news"
       create: true
       slug: "{{slug}}"
       fields:
           - { label: "כותרת", name: "title", widget: "string" }
           - { label: "תוכן", name: "body", widget: "markdown" }
+          - { label: "תאריך", name: "date", widget: "datetime" }
