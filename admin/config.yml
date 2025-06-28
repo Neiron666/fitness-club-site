@@ -2,8 +2,8 @@ backend:
     name: github
     repo: Neiron666/fitness-club-site
     branch: main
+    base_url: https://api.netlify.com
     auth_scope: repo
-    base_url: https://fitness-club-il-project.netlify.app
 
 media_folder: "images/uploads" # Куда сохраняются картинки внутри репозитория
 public_folder: "/images/uploads" # Как путь выглядит на сайте
